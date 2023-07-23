@@ -15,3 +15,5 @@ some of the reference
 **https://learn.microsoft.com/en-us/windows/apps/design/shell/tiles-and-notifications/send-local-toast?tabs=uwp**
 
 https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/notifications/app-notifications/app-notifications-quickstart?tabs=cs
+
+https://www.c-sharpcorner.com/article/working-with-popup-notification-in-windows-forms/
