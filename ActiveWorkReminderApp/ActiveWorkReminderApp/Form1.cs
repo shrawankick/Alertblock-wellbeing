@@ -17,26 +17,32 @@ namespace ActiveWorkReminderApp
         {
             InitializeComponent();
 
+            //ShowInTaskbar = false;
             reminderTimer.Interval = 30000; // 1 hour in milliseconds
             reminderTimer.Tick += ReminderTimer_Tick;
+            reminderTimer.Start();
         }
 
-        private void btnStartStop_Click(object sender, EventArgs e)
-        {
-            if (reminderTimer.Enabled)
-            {
-                reminderTimer.Stop();
-                btnStartStop.Text = "Start";
-            }
-            else
-            {
-                reminderTimer.Start();
-                btnStartStop.Text = "Stop";
-            }
-        }
+        //private void btnStartStop_Click(object sender, EventArgs e)
+        //{
+        //    if (reminderTimer.Enabled)
+        //    {
+        //        reminderTimer.Stop();
+        //        btnStartStop.Text = "Start";
+        //    }
+        //    else
+        //    {
+        //        reminderTimer.Start();
+        //        btnStartStop.Text = "Stop";
+        //    }
+        //}
         private void ReminderTimer_Tick(object sender, EventArgs e)
         {
-            MessageBox.Show("Time to take a 2-minute break! Stand up and look around.");
+            //MessageBox.Show("Time to take a 2-minute break! Stand up and look around.");
+           //System.Media.SystemSounds.Exclamation.Play();
+
+            NotificationForm notificationForm = new NotificationForm("Time to take a 2-minute break! Stand up and look around.");
+            notificationForm.Show();
         }
     }
 }

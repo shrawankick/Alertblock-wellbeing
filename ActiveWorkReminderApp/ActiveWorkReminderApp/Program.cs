@@ -16,7 +16,8 @@ namespace ActiveWorkReminderApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            NotificationForm notificationForm = new NotificationForm("Time to take a 2-minute break! Stand up and look around.");
+            Application.Run(notificationForm);
         }
     }
 }
