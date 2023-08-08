@@ -46,7 +46,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(310, 92);
+            this.btnClose.Location = new System.Drawing.Point(265, 78);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(143, 40);
             this.btnClose.TabIndex = 1;
@@ -65,6 +65,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "NotificationForm";
             this.Text = "Take Break!!";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.NotificationForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

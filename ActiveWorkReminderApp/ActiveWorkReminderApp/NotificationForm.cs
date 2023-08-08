@@ -20,8 +20,7 @@ namespace ActiveWorkReminderApp
             InitializeComponent();
             lblMessage.Text = message;
 
-            //Add coundown Timer 
-
+            //Add countdown Timer 
             // Create and configure a label to display the countdown timer
             Label lblTimer = new Label();
             lblTimer.AutoSize = true;
@@ -29,19 +28,11 @@ namespace ActiveWorkReminderApp
             lblTimer.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             lblTimer.ForeColor = System.Drawing.Color.Red;
             this.Controls.Add(lblTimer);
-
             // Set up the notification timer
             notificationTimer.Interval = 1000; // 1 second interval
             notificationTimer.Tick += (s, e) => UpdateTimerLabel(lblTimer);
             notificationTimer.Start(); // Start the notification timer
-
-            //
-
-            //notificationTimer.Interval = 120000;
-            ////closeTimer.Tick += CloseTimer_Tick;
-            //notificationTimer.Interval = 120000; // 2 minutes
-            //notificationTimer.Tick += NotificationTimer_Tick;
-            //notificationTimer.Start();
+      
             btnClose.Enabled = false;
         }
 
@@ -50,7 +41,7 @@ namespace ActiveWorkReminderApp
             remainingSeconds--;
             if (remainingSeconds <= 0)
             {
-                lblTimer.Text = "Time's up!";
+                lblTimer.Text = "Back to Work!";
                 btnClose.Enabled = true; // Enable the "Close" button
                 notificationTimer.Stop(); // Stop the notification timer
             }
@@ -73,33 +64,7 @@ namespace ActiveWorkReminderApp
         {
 
         }
-        //private void CloseTimer_Tick(object sender, EventArgs e)
-        //{
-        //    // Close the notification form when the timer ticks
-        //    closeTimer.Stop();
-        //    this.Close();
-        //}
-
-        private void NotificationTimer_Tick(object sender, EventArgs e)
-        {
-            //    // Display a message box when the notification timer ticks
-            //    MessageBox.Show("Time to take a 2-minute break! Stand up and look around.");
-
-            //    // Close the notification form after showing the message box
-            //    this.Close();
-            //
-
-            //int elapsedMilliseconds = 0;
-            //elapsedMilliseconds += 1000; // Increase elapsed time by 1 second
-
-            //// Check if 2 minutes (120,000 milliseconds) have passed
-            //if (elapsedMilliseconds >= 120000)
-            //{
-            //    btnClose.Enabled = true; // Enable the "Close" button
-            //    notificationTimer.Stop(); // Stop the notification timer
-            //}
-        }
-
+        
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
