@@ -18,6 +18,8 @@ https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/notifications/app
 
 https://www.c-sharpcorner.com/article/working-with-popup-notification-in-windows-forms/
 
+___
+
 
 ActiveWork Reminder: Stay Healthy, Stay Productive
 
@@ -34,41 +36,49 @@ This approach aims to promote movement, reduce sedentary behavior, and mitigate 
 ensuring that employees stay engaged in their work while also prioritizing their well-being and overall health. By encouraging regular breaks, 
 the application aims to create a healthier work environment and enhance the overall productivity and happiness of the employees.
 
+___
 
 
+ # Creating a Break Reminder Windows Forms Application
 
-Creating a Break Reminder Windows Forms Application
 
-Problem Statement:
+***
+**Problem Statement:**
 Employees facing health issues due to prolonged sitting hours; aiming to develop a Windows Forms app for timely break reminders.
 
-Solution Overview:
+**Solution Overview:**
 Developing a Windows Forms application that periodically sends break reminders to promote healthier habits.
-
-Project Steps:
-
-##Design User Interface:
-
-Create UI with a label and button.
-Drag and drop Timer control for reminders.
-##Break Notification:
-
-Customize break reminder messages.
-Display notifications at regular intervals.
-Prevent closing notifications from the taskbar.
-
-##Customization:
-
-Customize notification appearance for a modern look.
-Add a close button after a defined interval.
+***
 
 
-##User Activity Tracking:
+## Project Steps:
+
+## Design User Interface:
+
+1. Create UI with a label and button.
+1. Drag and drop Timer control for reminders.
+
+## Break Notification:
+
+1. Customize break reminder messages.
+1. Display notifications at regular intervals.
+1. Prevent closing notifications from the taskbar.
+
+## Customization:
+
+1. Customize notification appearance for a modern look.
+1. Add a close button after a defined interval.
+
+---
+below can be over kill but we need try 
+---
+
+## User Activity Tracking:
 
 Detect computer lock/unlock events.
 Pause notifications during lock and resume afterward.
 Implement user activity detection to validate reminders.
-##Break Occurrence Tracking:
+## Break Occurrence Tracking:
 
 Record the number of breaks taken.
 Implement a report to display break occurrences.
