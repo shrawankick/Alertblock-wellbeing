@@ -69,6 +69,12 @@ Developing a Windows Forms application that periodically sends break reminders t
 1. Customize notification appearance for a modern look.
 1. Add a close button after a defined interval.
 
+## Deployment 
+
+1. we need to create pacakage file so that user can install  
+1. if we have any updates/fix we need to create updated file and Send to all the installed computer
+1. we needd to make sure that app is loking for updates 
+
 ---
 below can be over kill but we need try 
 ---
