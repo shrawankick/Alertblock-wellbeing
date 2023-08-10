@@ -20,7 +20,8 @@ namespace ActiveWorkReminderApp
             notificationTimer.Interval = 30000; // 30 seconds interval
             notificationTimer.Tick += (sender, e) =>
             {
-                NotificationForm notificationForm = new NotificationForm("Time to take a 2-minute break! Stand up and look around.");
+                NotificationForm notificationForm = new NotificationForm("Time to take a 2-minute break! " +
+                    "Stand up and look around.");
                 notificationForm.Closed += (s, args) =>
                 {
                     notificationTimer.Start(); // Restart the timer after the previous notification is closed
