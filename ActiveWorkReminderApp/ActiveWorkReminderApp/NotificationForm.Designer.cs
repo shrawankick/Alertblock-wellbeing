@@ -32,6 +32,7 @@
             this.lblMessage = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.linkLabelLearnMore = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // lblMessage
@@ -54,12 +55,24 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // linkLabelLearnMore
+            // 
+            this.linkLabelLearnMore.AutoSize = true;
+            this.linkLabelLearnMore.Location = new System.Drawing.Point(12, 135);
+            this.linkLabelLearnMore.Name = "linkLabelLearnMore";
+            this.linkLabelLearnMore.Size = new System.Drawing.Size(242, 20);
+            this.linkLabelLearnMore.TabIndex = 2;
+            this.linkLabelLearnMore.TabStop = true;
+            this.linkLabelLearnMore.Text = "Learn more about healthy breaks";
+            this.linkLabelLearnMore.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLearnMore_LinkClicked);
+            // 
             // NotificationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 262);
+            this.ClientSize = new System.Drawing.Size(563, 208);
             this.ControlBox = false;
+            this.Controls.Add(this.linkLabelLearnMore);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lblMessage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -77,5 +90,6 @@
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.LinkLabel linkLabelLearnMore;
     }
 }

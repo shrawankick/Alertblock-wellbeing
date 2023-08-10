@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace ActiveWorkReminderApp
 {
@@ -34,6 +35,7 @@ namespace ActiveWorkReminderApp
             notificationTimer.Start(); // Start the notification timer
       
             btnClose.Enabled = false;
+            linkLabelLearnMore.LinkClicked += linkLabelLearnMore_LinkClicked;
         }
 
         private void UpdateTimerLabel(Label lblTimer)
@@ -68,6 +70,11 @@ namespace ActiveWorkReminderApp
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void linkLabelLearnMore_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/shrawankick/Alertblock-wellbeing-/wikis");
         }
     }
 }
