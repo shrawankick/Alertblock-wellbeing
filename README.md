@@ -88,3 +88,13 @@ Implement user activity detection to validate reminders.
 
 Record the number of breaks taken.
 Implement a report to display break occurrences.
+
+
+
+I know I am thinking tooo much but how About creating a App.config file where we can configue Details 
+Like 
+break intervals 
+break time 
+Break message 
+any Additional Linls so that user can have a better understanding why we need Breaks 
+
