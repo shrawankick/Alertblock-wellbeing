@@ -20,6 +20,8 @@ namespace ActiveWorkReminderApp
         {
             InitializeComponent();
             lblMessage.Text = message;
+            string randomMessage = GetRandomMessage();
+            labelGenerateMessage.Text = randomMessage;
 
             //Add countdown Timer 
             // Create and configure a label to display the countdown timer
@@ -33,7 +35,7 @@ namespace ActiveWorkReminderApp
             notificationTimer.Interval = 1000; // 1 second interval
             notificationTimer.Tick += (s, e) => UpdateTimerLabel(lblTimer);
             notificationTimer.Start(); // Start the notification timer
-      
+
             btnClose.Enabled = false;
             linkLabelLearnMore.LinkClicked += linkLabelLearnMore_LinkClicked;
         }
@@ -66,7 +68,7 @@ namespace ActiveWorkReminderApp
         {
 
         }
-        
+
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -75,6 +77,26 @@ namespace ActiveWorkReminderApp
         private void linkLabelLearnMore_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://github.com/shrawankick/Alertblock-wellbeing-/wikis");
+        }
+
+        private void labelGenerateMessage_Click(object sender, EventArgs e)
+        {
+            //string randomMessage = GetRandomMessage();
+            //labelGenerateMessage.Text = randomMessage;
+        }
+
+        private static string GetRandomMessage()
+        {
+            string[] breakMessages = 
+            {
+                "Take a moment to stretch your legs and relax.",
+                "Stand up and do a quick walk around the room. (lock your computer)",
+                "Look away from the screen and rest your eyes.",
+                "Stand up and look around."
+            };
+            Random random = new Random();
+            int index = random.Next(breakMessages.Length);
+            return breakMessages[index];
         }
     }
 }
