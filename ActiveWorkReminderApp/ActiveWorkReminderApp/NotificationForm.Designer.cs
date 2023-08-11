@@ -48,7 +48,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(265, 78);
+            this.btnClose.Location = new System.Drawing.Point(281, 75);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(143, 40);
             this.btnClose.TabIndex = 1;
@@ -59,7 +59,7 @@
             // linkLabelLearnMore
             // 
             this.linkLabelLearnMore.AutoSize = true;
-            this.linkLabelLearnMore.Location = new System.Drawing.Point(12, 135);
+            this.linkLabelLearnMore.Location = new System.Drawing.Point(12, 134);
             this.linkLabelLearnMore.Name = "linkLabelLearnMore";
             this.linkLabelLearnMore.Size = new System.Drawing.Size(242, 20);
             this.linkLabelLearnMore.TabIndex = 2;
