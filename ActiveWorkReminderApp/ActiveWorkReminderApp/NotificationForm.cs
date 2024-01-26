@@ -102,10 +102,10 @@ namespace ActiveWorkReminderApp
             return breakMessages[index];
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-           var LogoImageURL =  ConfigurationManager.AppSettings["LogoImageURL"];
-            Process.Start(LogoImageURL);
-        }
+        //private void pictureBox1_Click(object sender, EventArgs e)
+        //{
+        //   var LogoImageURL =  ConfigurationManager.AppSettings["LogoImageURL"];
+        //    Process.Start(LogoImageURL);
+        //}
     }
 }

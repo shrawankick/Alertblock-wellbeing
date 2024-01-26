@@ -51,9 +51,9 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(332, 60);
+            this.btnClose.Location = new System.Drawing.Point(16, 106);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(143, 40);
+            this.btnClose.Size = new System.Drawing.Size(131, 40);
             this.btnClose.TabIndex = 1;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -89,7 +89,6 @@
             this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Logo.TabIndex = 4;
             this.Logo.TabStop = false;
-            this.Logo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // NotificationForm
             // 
