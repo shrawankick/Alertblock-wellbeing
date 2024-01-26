@@ -76,7 +76,7 @@ Developing a Windows Forms application that periodically sends break reminders t
 1. we needd to make sure that app is loking for updates 
 
 ---
-below can be over kill but we need try 
+Below can be over kill but we need try 
 ---
 
 ## User Activity Tracking:

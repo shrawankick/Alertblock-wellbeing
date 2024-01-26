@@ -29,11 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NotificationForm));
             this.lblMessage = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.linkLabelLearnMore = new System.Windows.Forms.LinkLabel();
             this.labelGenerateMessage = new System.Windows.Forms.Label();
+            this.Logo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblMessage
@@ -48,9 +51,9 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(281, 75);
+            this.btnClose.Location = new System.Drawing.Point(16, 106);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(143, 40);
+            this.btnClose.Size = new System.Drawing.Size(131, 40);
             this.btnClose.TabIndex = 1;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -59,7 +62,7 @@
             // linkLabelLearnMore
             // 
             this.linkLabelLearnMore.AutoSize = true;
-            this.linkLabelLearnMore.Location = new System.Drawing.Point(12, 134);
+            this.linkLabelLearnMore.Location = new System.Drawing.Point(12, 149);
             this.linkLabelLearnMore.Name = "linkLabelLearnMore";
             this.linkLabelLearnMore.Size = new System.Drawing.Size(242, 20);
             this.linkLabelLearnMore.TabIndex = 2;
@@ -77,12 +80,23 @@
             this.labelGenerateMessage.Text = "label";
             this.labelGenerateMessage.Click += new System.EventHandler(this.labelGenerateMessage_Click);
             // 
+            // Logo
+            // 
+            this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
+            this.Logo.Location = new System.Drawing.Point(332, 119);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(143, 50);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Logo.TabIndex = 4;
+            this.Logo.TabStop = false;
+            // 
             // NotificationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 208);
+            this.ClientSize = new System.Drawing.Size(558, 241);
             this.ControlBox = false;
+            this.Controls.Add(this.Logo);
             this.Controls.Add(this.labelGenerateMessage);
             this.Controls.Add(this.linkLabelLearnMore);
             this.Controls.Add(this.btnClose);
@@ -92,6 +106,7 @@
             this.Text = "Break!!";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.NotificationForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,5 +119,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.LinkLabel linkLabelLearnMore;
         private System.Windows.Forms.Label labelGenerateMessage;
+        private System.Windows.Forms.PictureBox Logo;
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Configuration;
 
 namespace ActiveWorkReminderApp
 {
@@ -76,7 +77,9 @@ namespace ActiveWorkReminderApp
 
         private void linkLabelLearnMore_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://github.com/shrawankick/Alertblock-wellbeing-/wikis");
+            string learnMoreURL = ConfigurationManager.AppSettings["LearnMoreURL"];
+            Process.Start(learnMoreURL);
+            // Process.Start("https://github.com/shrawankick/Alertblock-wellbeing-/wikis");
         }
 
         private void labelGenerateMessage_Click(object sender, EventArgs e)
@@ -98,5 +101,11 @@ namespace ActiveWorkReminderApp
             int index = random.Next(breakMessages.Length);
             return breakMessages[index];
         }
+
+        //private void pictureBox1_Click(object sender, EventArgs e)
+        //{
+        //   var LogoImageURL =  ConfigurationManager.AppSettings["LogoImageURL"];
+        //    Process.Start(LogoImageURL);
+        //}
     }
 }
